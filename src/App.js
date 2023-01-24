@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import Navbar from './components/navbar';
 import './App.css';
+import { useEffect,useState } from "react";
+import Countries from './components/countries';
+
 
 function App() {
+  const[countries,setcountries] = useState([])
+  //displaying countries list
+  useEffect( function(){
+    fetch("https://api.covid19api.com/countries").then((response)=>response.json()).then((data) => {
+      console.log(data)
+      setcountries(data)
+    })
+    
+  },[])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+   <Navbar/>
+   <Countries countries = {countries}/>
+   </>
+  )
+
 }
+
 
 export default App;
