@@ -2,7 +2,7 @@ import React,{useState, useEffect} from 'react'
 import Chart from 'chart.js/auto';
 import { Box } from "@mui/system";
 import { Bar,Line} from 'react-chartjs-2';
-//import Grid from "@mui/material/Grid";
+// import Grid from "@mui/material/Grid";
 // import Paper from "@mui/material/Paper";
 // import Typography from "@mui/material/Typography";
 // import { useParams } from 'react-router-dom';
@@ -74,4 +74,4 @@ function Analysis() {
     )
 }
 
-export default Analysis
+export default Analysis;
