@@ -40,6 +40,8 @@ class CovidTable extends Component {
       </table>
     );
   }
-}
+} 
 
 export default CovidTable;
+
+

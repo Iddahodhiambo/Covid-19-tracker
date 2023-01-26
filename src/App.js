@@ -21,10 +21,17 @@ function App() {
     <>
    <Navbar/>
    <Countries countries = {countries}/>
+     <CovidTable countries={countries} />
+
    </>
+   
+
   )
 
 }
 
 
 export default App;
+
+
+
