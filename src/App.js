@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import Countries from './components/countries';
 import Home from './components/Home';
 import Graphs from './components/graph';
-// import Summary from './components/summary';
+import Summary from './components/summary';
 
 
 function App() {
@@ -26,11 +26,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/countries' element={<Countries countries={summary.Countries} />} />
-        <Route path='/graphs' element={<Graphs/>} />
-
+        <Route path='/graphs' element={<Graphs summary={summary.Countries}/>} />
+        <Route path='/summary' element={<Summary summary={summary.Countries} />} />
 
       </Routes>
-      {/* <Countries countries={summary.Countries}/> */}
     </div>
   )
 

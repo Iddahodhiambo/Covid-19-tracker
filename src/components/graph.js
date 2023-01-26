@@ -1,8 +1,9 @@
 import React from 'react'
+import Dayone from './Dayone'
 
 function Graphs() {
   return (
-    <div>graph</div>
+    <div>graphs</div>
   )
 }
 
