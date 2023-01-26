@@ -19,19 +19,25 @@ class CovidTable extends Component {
 
   render() {
     return (
-      <table>
+      <table className="table-primary">
         <thead>
           <tr>
-            <th>Country</th>
-            <th>Confirmed Cases</th>
-            <th>Deaths</th>
-            <th>Recovered</th>
+            <th scope="col">Country</th>
+            <th scope="col">Confirmed Cases</th>
+            <th scope="col">Deaths</th>
+            <th scope="col">Recovered</th>
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <th scope="row">#</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
           {this.state.data.map(item => (
             <tr key={item.Country}>
-              <td>{item.Country}</td>
+              <td className= "table-primary">{item.Country}</td>
               <td>{item.TotalConfirmed}</td>
               <td>{item.NewDeaths}</td>
               <td>{item.NewRecovered}</td>
