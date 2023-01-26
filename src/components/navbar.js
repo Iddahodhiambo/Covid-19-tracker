@@ -18,6 +18,9 @@ function Navbar(){
 
                 <li><NavLink to="/analysis"className="active">analysis</NavLink></li>
 
+                <li><NavLink to="/summary"className="active">summary</NavLink></li>
+
+
             </ul>
         </div>
     </nav>

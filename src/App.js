@@ -7,14 +7,17 @@ import Navbar from './components/navbar';
 import Countries from './components/Countries';
 import Analysis from './components/Analysis'
 import Footer from './components/Footer';
- import {Switch,Route} from 'react-router-dom';
+import {Switch,Route} from 'react-router-dom';
+import Summary from './components/summary';
+
+
  
 
 
 function App() {
 
   const[page,SetPage] = useState("/")
-  
+
   const[summary,setSummary] = useState([]);
 
   // fetch country data
@@ -46,9 +49,9 @@ function App() {
                     <Analysis />
               </Route>
               
-              {/* <Route path="*">
-                    <h1>404 not found</h1>
-                </Route> */}
+               <Route path="/summary">
+                 <Summary summary={summary.Countries} />} />
+                </Route> 
             </Switch>
             <Footer/>
         </div>

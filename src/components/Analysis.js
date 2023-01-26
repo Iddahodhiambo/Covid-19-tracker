@@ -2,11 +2,6 @@ import React,{useState, useEffect} from 'react'
 import Chart from 'chart.js/auto';
 import { Box } from "@mui/system";
 import { Bar} from 'react-chartjs-2';
-// import Grid from "@mui/material/Grid";
-// import Paper from "@mui/material/Paper";
-// import Typography from "@mui/material/Typography";
-// import { useParams } from 'react-router-dom';
-
 
 
 function Analysis() {
@@ -67,7 +62,7 @@ function Analysis() {
     
 
     return (
-        <Box component="main" sx={{ flexGrow: 1, p: 16 }} >
+    <Box component="main" sx={{ flexGrow: 1, p: 16 }} >
         <Bar data={graphData} />
     </Box>
 
