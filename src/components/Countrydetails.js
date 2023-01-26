@@ -1,6 +1,10 @@
- function CountryDetails({Countries}) {
+ function CountryDetails({country}) {
     return(
-        <p>{Countries}</p>
+        <tr>
+            <td>{country.Country}</td>
+            <td>{country.TotalConfirmed}</td>
+            <td>{country.TotalDeaths}</td>
+        </tr>
     )
     
  }

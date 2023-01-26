@@ -1,25 +1,37 @@
 import Navbar from './components/navbar';
 import './App.css';
 import { useEffect,useState } from "react";
+import { Route, Routes } from 'react-router-dom';
 import Countries from './components/countries';
+import Home from './components/Home';
+import Graphs from './components/graph';
+// import Summary from './components/summary';
 
 
 function App() {
-  const[countries,setcountries] = useState([])
-  //displaying countries list
-  useEffect( function(){
-    fetch("https://api.covid19api.com/countries").then((response)=>response.json()).then((data) => {
-      console.log(data)
-      setcountries(data)
-    })
-    
+  const[summary,setSummary] = useState([]);
+
+  // fetch country data
+  useEffect(() => {
+    fetch("https://api.covid19api.com/summary")
+      .then((res) => res.json())
+      .then((r) => setSummary(r))
   },[])
+
+  console.log(summary)
   
   return (
-    <>
-   <Navbar/>
-   <Countries countries = {countries}/>
-   </>
+    <div>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/countries' element={<Countries countries={summary.Countries} />} />
+        <Route path='/graphs' element={<Graphs/>} />
+
+
+      </Routes>
+      {/* <Countries countries={summary.Countries}/> */}
+    </div>
   )
 
 }
