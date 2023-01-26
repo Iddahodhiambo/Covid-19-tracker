@@ -1,5 +1,5 @@
 //import { FormControl } from '@mui/material';
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import './App.css';
 import Home from './components/Home';
 import Navbar from './components/navbar';
@@ -15,6 +15,18 @@ function App() {
 
   const[page,SetPage] = useState("/")
   
+  const[summary,setSummary] = useState([]);
+
+  // fetch country data
+  useEffect(() => {
+    fetch("https://api.covid19api.com/summary")
+      .then((res) => res.json())
+      .then((r) => setSummary(r))
+  },[])
+
+  console.log(summary)
+
+  
   return (
     <div className='App'>       
       <div>
@@ -27,8 +39,8 @@ function App() {
                     <Search />
               </Route>
                */}
-               <Route path="/countries">
-                    <Countries />
+               <Route path="/countries" >
+                    <Countries countries={summary.Countries} />
               </Route>
               <Route path="/analysis">
                     <Analysis />

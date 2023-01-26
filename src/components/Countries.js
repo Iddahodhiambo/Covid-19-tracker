@@ -1,12 +1,25 @@
-import React from "react";
-//import { useState } from "react";
+import CountryDetails from "./CountryDetails"
 
+function Countries ({countries}){
 
-function Countries() {
-    
-    return (
-        <div>The countries list</div>
-            )
+  let countriesList = countries.map((country) => {
+    return <CountryDetails key={country.ISO2} country={country} />
+  })
+
+  return(
+    <div>
+      <table>
+        <tbody>
+          <tr>
+            <th>Country Name</th>
+            <th>Total Confirmed</th>
+            <th>Total Death</th>
+          </tr>
+          {countriesList}
+        </tbody>
+      </table>
+    </div>
+  )
 }
 
 export default Countries
