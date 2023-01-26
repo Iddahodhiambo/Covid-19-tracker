@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "bootstrap";
 
 class CovidTable extends Component {
   constructor(props) {
