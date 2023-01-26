@@ -29,11 +29,11 @@ class CovidTable extends Component {
         </thead>
         <tbody>
           {this.state.data.map(item => (
-            <tr key={item.country}>
-              <td>{item.country}</td>
-              <td>{item.confirmed}</td>
-              <td>{item.deaths}</td>
-              <td>{item.recovered}</td>
+            <tr key={item.Country}>
+              <td>{item.Country}</td>
+              <td>{item.TotalConfirmed}</td>
+              <td>{item.NewDeaths}</td>
+              <td>{item.NewRecovered}</td>
             </tr>
           ))}
         </tbody>
