@@ -1,34 +1,46 @@
 import { useEffect,useState } from "react";
 
 import Summarydetails from "./Summarydetasils";
+import Dayone from "./Dayone";
   
 
-function Summary() {
-const [summary,setsummary] = useState([])
+function Summary({summary}) {
+
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+      let counter = count;
+      const interval = setInterval(() => {
+        if (counter >= summary.length) {
+          clearInterval(interval);
+        } else {
+          setCount(count => count + 1);
+          counter++; // local variable that this closure will see
+        }
+      }, 1500);
+      return () => clearInterval(interval); 
+    }, [summary]);
 
 
-useEffect(function () {
-  fetch("https://api.covid19api.com/summary").then((response)=> response.json()).then((data) => {
-            
-            setsummary(data)
-            
-        })
-},[])
-    console.log(summary)
+    let dayOneCases = summary.slice(0, count).map((country) => {
+        return <Dayone key={country.ID} country={country} />
+    })
 
-//    let summarylist = summary.map(Country => {
-    
-//     return<Summarydetails Country = {Country.Country}
-            
-//             Cases = {Country.NewConfirmed}/>
-        
-//         })
         return(
-            <>
-            {/* {summarylist} */}
-            <h2>Hello world</h2>
             
-            </>
+        <div>
+            <table>
+                <tbody>
+                <tr>
+                    <th>Country</th>
+                    <th>Day one cases</th>
+                </tr>
+                {dayOneCases}
+                </tbody>
+            </table>
+        </div>
+            
+            
         )
     
 

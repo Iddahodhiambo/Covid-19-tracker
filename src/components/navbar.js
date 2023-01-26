@@ -15,6 +15,7 @@ function Navbar(){
                 <NavLink exact to={'/'} style={linkStyles}><strong className="nav-link" >Home</strong ></NavLink>
                 <NavLink exact to={'/countries'} style={linkStyles}><strong className="nav-link">Countries</strong></NavLink>
                 <NavLink exact to={'/graphs'} style={linkStyles}><strong className="nav-link">Graphs</strong></NavLink>
+                <NavLink exact to={'/summary'} style={linkStyles}><strong className="nav-link">Summary</strong></NavLink>
             </div>
         </nav>
     )
