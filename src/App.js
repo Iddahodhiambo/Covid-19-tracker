@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import './App.css';
 import { useEffect,useState } from "react";
 import Countries from './components/Countries';
+import CovidTable from './components/CovidTable';
 
 
 function App() {
