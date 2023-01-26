@@ -8,6 +8,7 @@ import Countries from './components/Countries';
 import Analysis from './components/Analysis'
 import Footer from './components/Footer';
  import {Switch,Route} from 'react-router-dom';
+ 
 
 
 function App() {
