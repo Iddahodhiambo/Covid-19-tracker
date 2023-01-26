@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import Chart from 'chart.js/auto';
 import { Box } from "@mui/system";
-import { Bar,Line} from 'react-chartjs-2';
+import { Bar} from 'react-chartjs-2';
 // import Grid from "@mui/material/Grid";
 // import Paper from "@mui/material/Paper";
 // import Typography from "@mui/material/Typography";
@@ -15,7 +15,7 @@ function Analysis() {
     const today = date.toISOString().slice(0, 10);
 
     useEffect(() => {
-        //should change the api to https://api.covid19api.com/dayone/country/south-africa/status/confirmed/live
+        //should change the api to https://api.covid19api.com/summary
 
         fetch(`https://covid-193.p.rapidapi.com/statistics`, {
             "method": "GET",

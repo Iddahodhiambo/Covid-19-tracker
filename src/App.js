@@ -3,7 +3,7 @@ import React,{useState} from 'react';
 import './App.css';
 import Home from './components/Home';
 import Navbar from './components/navbar';
-import Search from './components/Search';
+//import Search from './components/Search';
 import Countries from './components/Countries';
 import Analysis from './components/Analysis'
 import Footer from './components/Footer';
@@ -22,10 +22,11 @@ function App() {
               <Route exact path="/">
                     <Home />
               </Route>
-              <Route path="/search">
+              {/* <Route path="/search">
                     <Search />
               </Route>
-              <Route path="/countries">
+               */}
+               <Route path="/countries">
                     <Countries />
               </Route>
               <Route path="/analysis">

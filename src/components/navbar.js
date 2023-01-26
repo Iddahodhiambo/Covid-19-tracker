@@ -12,7 +12,7 @@ function Navbar(){
     
                 <li><NavLink  to="/"className="active"href="index.html">Home</NavLink></li>
 
-                <li><NavLink to="/search"className="active">search</NavLink></li>
+                {/* <li><NavLink to="/search"className="active">search</NavLink></li> */}
 
                 <li><NavLink to="/countries"className="active">countries</NavLink></li>
 
