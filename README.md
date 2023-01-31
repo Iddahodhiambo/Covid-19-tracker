@@ -57,8 +57,8 @@ To use this repo on your machine requires some simple steps
 
 This project was contributed to by:
 - [Awuor odhiambo](https://github.com/Iddahodhiambo/)
-- [m-njora] (https://github.com/m-njora)
-- [VincentChisaka] https://github.com/VincentChisaka
+- [m-njora](https://github.com/m-njora/)
+- [VincentChisaka](https://github.com/VincentChisaka/)
 
 # License
 The project is licensed under Apache 2.0.
