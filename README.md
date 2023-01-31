@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Covid 19 Tracker App (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Description
 
-## Available Scripts
+This is  a project  for building out a React application  that tracks covid 19 information using the post man API.
 
-In the project directory, you can run:
+# LIVE LINK
 
-### `npm start`
+ - https://covid-19-tracker-psi-six.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In order for you to use the content on this repo ensure you have the following:
+- A computer that runs on either of the following;
+-(Windows 7+, Linux, Mac OS)
+- nodejs 9.0+
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To use this repo on your machine requires some simple steps
 
-### `npm run build`
+### Alternative One
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Open a terminal / command line interface on your computer
+- Clone the repo by using the following:
+        git clone https://github.com/Iddahodhiambo/Covid-19-tracker
+- Be patient as it creates a copy on your local machine for you.
+- Change directory to the repo folder:
+        cd Covid-19-tracker
+- (Optional) Open it in ``Visual Studio Code``
+        code .
+- (Alternate Option) Open it in any editor of your choice.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Alternative Two
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- On the top right corner of this page there is a button labelled ``Fork``.
+- Click on that button to fork the repo to your own account.
+- Take on the process in ``Alternative One`` above.
+- Remember to replace your username when cloning.
+        git clone https://github.com/your-username-here/Covid-19-tracker
 
-### `npm run eject`
+# Running the application
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ You can use the following steps to run the app.
+- Install required dependencies from npm
+      npm install
+- Run the application on the browser
+      npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# How the program works
+- On starting the App ,User will be greeted with a brief description of covid 19 on the and total summary on the Homepage.
+- on clicking learn more on the cards,user will be riderected to countries page(these are countries affected by covid 19)
+- The analysis  page comtains thr graph that was used  to analyze covid 19 information.
+- The summary page displays the covid 19 day one cases for each country.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Authors                 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project was contributed to by:
+- [Awuor odhiambo](https://github.com/Iddahodhiambo/)
+- [m-njora] (https://github.com/m-njora)
+- [VincentChisaka] https://github.com/VincentChisaka
 
-## Learn More
+# License
+The project is licensed under Apache 2.0.
+covid-19-tracker-psi-six.vercel.app
+https://covid-19-tracker-psi-six.vercel.app/
+Web site created using create-react-app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
