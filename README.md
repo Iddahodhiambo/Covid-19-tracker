@@ -62,6 +62,7 @@ This project was contributed to by:
 
 # License
 The project is licensed under Apache 2.0.
+
 covid-19-tracker-psi-six.vercel.app
 https://covid-19-tracker-psi-six.vercel.app/
 Web site created using create-react-app
